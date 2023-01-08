@@ -17,7 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -37,15 +37,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m an software developer and software architect based in Kazakhstan!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Alimkhan Nurekenov
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Digital Craftsman ( software architect / Developer / Product Manager )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,21 +79,16 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
+          Alimkhan is a freelance and a full-stack developer based in Astana, i have big experience in development different types of applications and 
+          web systems, it startups.{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
+          . brainstorming with TrustMe Team &quot;
+          <NextLink href="https://www.youtube.com/watch?v=8k7iXPK0hg8" passHref>
+            <Link target="_blank">Product Brain Storming</Link>
           </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot; successful startup case, mor 600.000$ investment.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -109,22 +104,28 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2001</BioYear>
+          Born in Semey, Kazakhstan.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2017</BioYear>
+          Begin work as Frontend Developer
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2018</BioYear>
+          Junior Android Developer
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2019</BioYear>
+          Flutter Developer
+        </BioSection>
+        <BioSection>
+          <BioYear>2019-2021 Product Manager</BioYear>
+          Trustme.kz
+        </BioSection>
+        <BioSection>
+          <BioYear>from 2021 to 2023 work as Freelancer and IT enterpreneur</BioYear>
+          Lead mobile Development teams
         </BioSection>
       </Section>
 
@@ -134,14 +135,12 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          <Link href="https://www.youtube.com/watch?v=M5olvwg_5VU" target="_blank">
+          Playing Guitar and Piano,
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          , Reading,{' '}
+         
+          ,  Machine Learning
         </Paragraph>
       </Section>
 
@@ -150,6 +149,7 @@ const Home = () => (
           On the web
         </Heading>
         <List>
+           {/*
           <ListItem>
             <Link href="https://github.com/craftzdog" target="_blank">
               <Button
@@ -161,6 +161,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
+           
           <ListItem>
             <Link href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
@@ -172,25 +173,27 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
+         */}
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://www.linkedin.com/in/alimhan-nurekenov-568a111ba/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @craftzdog (日本語)
+            @alimhan_nurekenov
               </Button>
             </Link>
           </ListItem>
+
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://www.instagram.com/alimhan_nurekenov/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @alimhannurekenov
               </Button>
             </Link>
           </ListItem>
@@ -198,18 +201,18 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://www.youtube.com/watch?v=8k7iXPK0hg8e"
+            title="Product Brainstorm"
             thumbnail={thumbYouTube}
           >
-            My YouTube channel (&gt;100k subs)
+            This team make (&gt;600k$ investments)
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
+            href="https://mobilaser.kz/digital-bridge-2022-mezhdunarodnyj-it-poligon-dlya-kreativnoj-molodezhi-kazahstana/technologies/innovation/"
+            title="Digital Bridge 2022"
             thumbnail={thumbInkdrop}
           >
-            A Markdown note-taking app
+            Publication with me
           </GridItem>
         </SimpleGrid>
 
