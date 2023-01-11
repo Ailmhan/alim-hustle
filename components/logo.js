@@ -26,7 +26,8 @@ const Logo = () => {
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-        <FootprintIcon />
+      <FootprintIcon /> 
+   
 
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
